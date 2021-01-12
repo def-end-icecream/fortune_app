@@ -18,4 +18,10 @@ class Api::MyExamplesController < ApplicationController
     render "lotto_numbers.json.jb"
   end
 
+  def visit_count_action
+    @count = 0
+    @count += 1
+    render "visit_count.json.jb"
+  end
+
 end
